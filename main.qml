@@ -4,7 +4,7 @@ import QtQuick.Window 2.2
 import QtQuick.Dialogs 1.2
 
 ApplicationWindow {
-    title: qsTr("Hello World1")
+    title: qsTr("MyMovies")
     width: 640
     height: 480
     visible: true
@@ -25,9 +25,9 @@ ApplicationWindow {
 
     MainForm {
         anchors.fill: parent
-        button1.onClicked: messageDialog.show(qsTr("Button 1 pressed"))
-        button2.onClicked: messageDialog.show(qsTr("Button 2 pressed"))
-        button3.onClicked: messageDialog.show(qsTr("Button 3 pressed"))
+        button1.onClicked: messageDialog.show(qsTr(" Begining ..."))
+//        button2.onClicked: messageDialog.show(qsTr("Button 2 pressed"))
+//        button3.onClicked: messageDialog.show(qsTr("Button 3 pressed"))
     }
 
     MessageDialog {
@@ -37,6 +37,7 @@ ApplicationWindow {
         function show(caption) {
             messageDialog.text = caption;
             messageDialog.open();
+
         }
     }
 }
